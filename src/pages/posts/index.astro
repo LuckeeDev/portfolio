@@ -3,14 +3,16 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
-const posts = (await getCollection("posts")).sort(function (first, second) {
+const posts = ((await getCollection("posts")) ?? []).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
 
-<Layout title="Template - All Posts">
+<Layout title="All Posts | Luca Zoppetti">
   <main class="flex flex-col gap-20">
     <h1 class="text-2xl text-neutral-100">Posts</h1>
+
+    {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
     <article class="flex flex-col gap-4">
       {

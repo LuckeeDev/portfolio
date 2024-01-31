@@ -13,12 +13,14 @@ import projects from '@/data/projects';
 
 const { data: presentation } = await getEntry('presentation', 'presentation');
 
-const posts = (await getCollection('posts')).sort(function (first, second) {
+console.log(await getCollection('posts'));
+
+const posts = ((await getCollection('posts')) ?? []).sort(function (first, second) {
 	return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
 ---
 
-<Layout>
+<Layout title="Home | Luca Zoppetti">
 	<main class="flex flex-col gap-20">
 		<article
 			class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
