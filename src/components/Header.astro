@@ -1,5 +1,6 @@
 ---
 import removeTrailingSlash from '@/utils/removeTrailingSlash';
+import { Icon } from 'astro-icon/components';
 import { getEntry } from 'astro:content';
 
 const { data: presentation } = await getEntry('presentation', 'presentation');
@@ -38,8 +39,8 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 				<a
 					href="https://cv.lucazoppetti.me"
 					target="_blank"
-					class="hover:text-neutral-100"
-					>CV</a
+					class="hover:text-neutral-100 flex items-baseline gap-1"
+					>CV<Icon name="external" size={11} /></a
 				>
 			</li>
 		</ul>

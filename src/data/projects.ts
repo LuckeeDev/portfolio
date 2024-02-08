@@ -8,7 +8,7 @@ export type Project = {
 const projects: Project[] = [
 	{
 		title: 'LuTeX',
-		techs: ['LaTeX'],
+		techs: ['LaTeX', 'Physics', 'Math'],
 		link: 'https://tex.lucazoppetti.me/',
 	},
 	{
@@ -18,7 +18,7 @@ const projects: Project[] = [
 	},
 	{
 		title: 'Analytical Mechanics',
-		techs: ['Python'],
+		techs: ['Python', 'Visualization'],
 		link: 'https://github.com/LuckeeDev/analytical_mechanics',
 	},
 ];
