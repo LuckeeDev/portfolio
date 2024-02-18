@@ -1,5 +1,10 @@
 {
-	"title": "Analytical Mechanics",
-	"techs": ["Python", "Matplotlib", "SciPy"],
-	"link": "https://github.com/LuckeeDev/analytical_mechanics"
+  "title": "Analytical Mechanics",
+  "techs": [
+    "Python",
+    "Matplotlib",
+    "SciPy"
+  ],
+  "link": "https://github.com/LuckeeDev/analytical_mechanics",
+  "description": "Simulations for the \"Analytical Mechanics\" course at the University of Bologna."
 }

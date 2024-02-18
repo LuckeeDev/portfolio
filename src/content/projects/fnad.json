@@ -5,5 +5,6 @@
     "SFML",
     "Tiled"
   ],
-  "link": "https://github.com/LuckeeDev/fnad"
+  "link": "https://github.com/LuckeeDev/fnad",
+  "description": "The most awaited 2D game of all time, developed for the \"Programming for Physics\" exam at the University of Bologna."
 }

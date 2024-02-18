@@ -1,5 +1,10 @@
 {
-	"title": "LuTeX",
-	"techs": ["LaTeX", "Physics", "Math"],
-	"link": "https://tex.lucazoppetti.me/"
+  "title": "LuTeX",
+  "techs": [
+    "LaTeX",
+    "Physics",
+    "Math"
+  ],
+  "link": "https://tex.lucazoppetti.me/",
+  "description": "A website with LaTeX projects I write for my studies."
 }
