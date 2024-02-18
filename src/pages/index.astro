@@ -9,15 +9,20 @@ import ProjectCard from '@/components/ProjectCard.astro';
 import Link from '@/components/shared/Link.astro';
 import convertAsteriskToStrongTag from '@/utils/convertAsteriskToStrongTag';
 
-import projects from '@/data/projects';
-
 const { data: presentation } = await getEntry('presentation', 'presentation');
+const descriptionHTML = await convertAsteriskToStrongTag(
+	presentation.description
+);
 
-console.log(await getCollection('posts'));
+const posts = ((await getCollection('posts')) ?? []).sort(
+	function (first, second) {
+		return (
+			second.data.publishedAt.getTime() - first.data.publishedAt.getTime()
+		);
+	}
+);
 
-const posts = ((await getCollection('posts')) ?? []).sort(function (first, second) {
-	return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
-});
+const projects = await getCollection('projects');
 ---
 
 <Layout title="Home | Luca Zoppetti">
@@ -43,9 +48,7 @@ const posts = ((await getCollection('posts')) ?? []).sort(function (first, secon
 				</h1>
 				<h2
 					class="w-auto max-w-[60ch] leading-6"
-					set:html={convertAsteriskToStrongTag(
-						presentation.description
-					)}
+					set:html={descriptionHTML}
 				/>
 
 				<SocialLinks />
@@ -92,7 +95,9 @@ const posts = ((await getCollection('posts')) ?? []).sort(function (first, secon
 			<section class="flex flex-col gap-4">
 				{
 					projects.length !== 0 &&
-						projects.map((project) => <ProjectCard {...project} />)
+						projects.map((project) => (
+							<ProjectCard {...project.data} />
+						))
 				}
 			</section>
 		</article>

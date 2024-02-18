@@ -1,1 +1,1 @@
-export const SITE_URL = 'https://lucazoppetti.netlify.app/';
+export const SITE_URL = 'https://lucazoppetti.me/';

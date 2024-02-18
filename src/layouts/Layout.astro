@@ -1,7 +1,6 @@
 ---
 import Header from '../components/Header.astro';
 import BlurCircle from '@/components/shared/BlurCircle.astro';
-import theme from '@/data/theme';
 import SEOTags from '@/components/seo/SEOTags.astro';
 import type { HeadTags } from '@/utils/types/HeadTags';
 
@@ -18,9 +17,10 @@ export type Props = HeadTags;
 const headTags = Astro.props;
 
 const { data: presentation } = await getEntry('presentation', 'presentation');
+const { data: theme } = await getEntry('theme', 'theme');
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<SEOTags {...headTags} />
@@ -31,8 +31,8 @@ const { data: presentation } = await getEntry('presentation', 'presentation');
 		class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
 	>
 		<Header />
-		<BlurCircle position="top" color={theme.colors.blur.top} />
-		<BlurCircle position="bottom" color={theme.colors.blur.bottom} />
+		<BlurCircle position="top" color={theme.blur_top} />
+		<BlurCircle position="bottom" color={theme.blur_bottom} />
 		<slot />
 		<style is:global>
 			html {

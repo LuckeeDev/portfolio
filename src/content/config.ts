@@ -27,7 +27,29 @@ const presentationCollection = defineCollection({
 	}),
 });
 
+const projectsCollection = defineCollection({
+	type: 'data',
+	schema: z.object({
+		title: z.string(),
+		techs: z.array(z.string()),
+		link: z.string().url(),
+	})
+});
+
+const tailwindColorEnum = z.enum(['sky', 'emerald', 'rose', 'violet', 'amber', 'blue', 'green', 'red', 'yellow', 'indigo', 'pink', 'purple', 'fuchsia', 'cyan', 'teal', 'lime', 'orange']);
+
+const themeCollection = defineCollection({
+	type: 'data',
+	schema: z.object({
+		primary: tailwindColorEnum,
+		blur_top: tailwindColorEnum,
+		blur_bottom: tailwindColorEnum
+	})
+})
+
 export const collections = {
 	posts: postsCollection,
 	presentation: presentationCollection,
+	projects: projectsCollection,
+	theme: themeCollection
 };
