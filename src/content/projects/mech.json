@@ -1,5 +1,5 @@
 {
 	"title": "Analytical Mechanics",
-	"techs": ["Python", "Visualization"],
+	"techs": ["Python", "Matplotlib", "SciPy"],
 	"link": "https://github.com/LuckeeDev/analytical_mechanics"
 }
