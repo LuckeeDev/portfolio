@@ -95,6 +95,11 @@ export default defineConfig({
 								widget: 'list',
 							},
 							{
+								name: 'description',
+								label: 'Description',
+								widget: 'string',
+							},
+							{
 								name: 'link',
 								label: 'Link',
 								widget: 'string',
