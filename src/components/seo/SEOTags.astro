@@ -8,8 +8,7 @@ type Props = HeadTags;
 const { title, description, noindex, og } = Astro.props;
 
 const DEFAULT_TITLE_PAGE = 'Luca Zoppetti';
-const DEFAULT_DESCRIPTION_PAGE =
-	'My personal website.';
+const DEFAULT_DESCRIPTION_PAGE = 'My personal website.';
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
@@ -24,7 +23,7 @@ const openGraph = {
 
 <SEO
 	charset="UTF-8"
-	title={title || DEFAULT_TITLE_PAGE}
+	title={title + ' | Luca Zoppetti' || DEFAULT_TITLE_PAGE}
 	description={description || DEFAULT_DESCRIPTION_PAGE}
 	noindex={noindex || false}
 	openGraph={{
