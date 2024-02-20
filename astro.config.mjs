@@ -65,12 +65,6 @@ export default defineConfig({
 								widget: 'date',
 							},
 							{
-								name: 'isPublish',
-								label: 'Publish',
-								widget: 'boolean',
-								default: true,
-							},
-							{
 								name: 'body',
 								label: 'Body',
 								widget: 'markdown',
