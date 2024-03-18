@@ -1,0 +1,10 @@
+{
+  "title": "Alcohol sound check",
+  "techs": [
+    "Python",
+    "librosa",
+    "Matplotlib"
+  ],
+  "link": "https://github.com/LuckeeDev/alcohol-sound-check",
+  "description": "A collection of executable scripts written to analyse data collected for \"Alcohol sound check\", problem number 4 of the International Physicists' Tournament 2024. "
+}
