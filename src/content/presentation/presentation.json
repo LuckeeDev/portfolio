@@ -1,12 +1,16 @@
 {
-  "email": "luca.zoppetti@studio.unibo.it",
+  "email": "luca.zoppetti.24@ucl.ac.uk",
   "title": "Hi, I’m Luca 👋",
-  "description": "I'm a BSc *Physics* student at the University of Bologna. I enjoy blending Physics and *Programming* to better understand what I'm studying. Here you will find short posts about *things I discover* that I would like to share.",
+  "description": "I'm a third year BSc *Physics* student at the University of Bologna, currently on a year abroad at University College London. I enjoy blending Physics and *Programming* to better understand what I'm studying. Here you will find short posts about *things I discover* that I would like to share.",
   "profile": "/images/profile.jpg",
   "socials": [
     {
       "label": "GitHub",
       "link": "https://github.com/LuckeeDev"
+    },
+    {
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/lucazoppetti"
     }
   ]
 }
