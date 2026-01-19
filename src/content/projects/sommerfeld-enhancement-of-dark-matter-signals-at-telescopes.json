@@ -1,0 +1,10 @@
+{
+  "title": "Sommerfeld enhancement of dark matter signals at telescopes",
+  "techs": [
+    "LaTeX",
+    "Python",
+    "Physics"
+  ],
+  "description": "The code for my bachelor thesis. It contains a theoretical study of the quantum-mechanical effect called “Sommerfeld enhancement” and its implications for the interpretation of experimental data coming from dark matter surveys at telescopes (specifically, FERMI-LAT).",
+  "link": "https://github.com/LuckeeDev/bachelor-thesis"
+}
